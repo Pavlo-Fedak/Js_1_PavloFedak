@@ -1,0 +1,15 @@
+@media screen and (min-width:481px) and (max-width:768px){
+
+    .container{
+        max-width: 500px;
+    }
+    .manager-form__controls{
+        grid-template-columns: minmax(0, 400px) minmax(60px, 100px);
+        gap: 20px;
+    }
+
+    .manager-content{
+        grid-template-columns: minmax(0, 400px) minmax(60px, 100px);
+        gap: 20px;
+    }
+}

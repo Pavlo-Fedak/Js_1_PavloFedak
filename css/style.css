@@ -1,0 +1,118 @@
+body{
+    background: rgba(24, 120, 241, 0.65);
+}
+.wrapper {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 960px;
+    background-color: aliceblue;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.manager-form label{
+    color: #605e5e;
+}
+
+.manager-form__controls{
+    display: grid;
+    grid-template-columns: minmax(0, 500px) minmax(60px, 130px);
+    gap: 50px;
+    align-items: center;
+
+}
+.manager-form__controls button{
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222222;
+    background-color: #f3f3f3;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            transform 0.1s ease;
+}
+
+.manager-form__controls button:hover{
+    background-color: #e5e5e5;
+    border-color: #777777;
+}
+
+.manager-form__input{
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+
+.manager-content{
+    display: grid;
+    grid-template-columns: minmax(0, 500px) minmax(60px, 130px);
+    gap: 50px;
+    align-items: start;
+}
+
+.pair-list__header{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.pair-list__header span{
+    color: #605e5e;
+}
+
+.pair-list__content{
+    background-color: white;
+    height: 600px;
+    border: 2px solid lightgray;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.manager-actions{
+    margin-top: 77px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 20px;
+}
+.manager-actions button{
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222222;
+    background-color: #f3f3f3;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            transform 0.1s ease;
+}
+.manager-actions button:hover{
+    background-color: #e5e5e5;
+    border-color: #777777;
+}

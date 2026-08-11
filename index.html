@@ -5,11 +5,56 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Name/Value Manager</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>>Name/Value Manager</title>
+    <link rel="stylesheet" href="css/style-max-width-768.css">
+    <link rel="stylesheet" href="css/style-max-width-480.css">
 </head>
 <body>
 
+<div class="wrapper">
+    <main>
+        <div class="container">
+            <div class="header-manager">
+                <h1>Test</h1>
+            </div>
+            <div class="manager-form">
+                <label for="pair-input">Name/Value Pair</label>
+
+                 <div class="manager-form__controls">
+                     <input type="text" id="pair-input" class="manager-form__input" placeholder="Name = Value">
+
+                     <button id="add-button" type="button">Add</button>
+                 </div>
+            </div>
+            <div class="manager-content">
+                <div class="pair-list">
+                    <div class="pair-list__header">
+                        <label for="select-all">
+                            <input id="select-all" type="checkbox">
+                            Select All
+                        </label>
+                        <span>Name/Value Pair List</span>
+                    </div>
+
+                    <ul class="pair-list__content" id="pairs-list">
+                        <li>No pairs added yet</li>
+                    </ul>
+
+                </div>
+                <div class="manager-actions">
+                    <button id="sort-name-button" type="button">Sort by Name</button>
+                    <button id="sort-value-button" type="button">Sort by Value</button>
+                    <button id="delete-button" type="button">Delete selected</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
 
 <script src="js/script.js"></script>
 </body>
